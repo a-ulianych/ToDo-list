@@ -16,16 +16,17 @@
 body {
     display: flex;
     margin: 0;
-    height: 100%;
     background-color: #EBF3FF;
 
     font-family: 'Poppins', sans-serif;
 }
 
 h2 {
-    margin: 0 0 5px 0;
-    font-size: 20px;
+    margin: 0;
+    font-size: 18px;
     text-align: center;
+
+    border-bottom: 1px solid;
 }
 
 .wrapper {
@@ -100,7 +101,7 @@ h2 {
     align-items: center;
     padding: 10px;
 
-    border-top: 1px solid black;
+    border: 1px solid black;
     width: auto;
     height: auto;
 }
@@ -117,28 +118,70 @@ h2 {
 
 .buttons {
     display: inline;
-    width: 10%;
+    width: 11%;
 }
 
-.complete-btn {
-    width: 20px;
-    height: 20px;
+.check-btn {
     vertical-align: middle;
+    font-size: 25px;
+}
+
+.check-btn:hover {
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    background-color: #95A3CCFF;
+    transition: .5s;
+}
+
+.hidden {
+    display: none;
 }
 
 .delete-btn {
     vertical-align: middle;
     margin-left: 10px;
 
-    font-size: 20px;
+    font-size: 25px;
     transition: .2s;
 }
 
 .delete-btn:hover {
+    cursor: pointer;
     color: red;
 }
 
 .delete-btn:active {
     color: black;
     transition: .1s;
+}
+
+.filter-bar {
+    display: flex;
+    justify-content: space-between;
+    height: 55px;
+
+    padding: 15px 200px;
+    box-sizing: border-box;
+
+    border-top: 1px solid;
+}
+
+.filter-item {
+    font-size: 20px;
+    font-weight: bold;
+
+    transition: .2s;
+}
+
+.filter-item:hover {
+    cursor: pointer;
+    color: #95A3CCFF;
+    text-decoration: underline;
+}
+
+.filter-item:active {
+    color: black;
 }

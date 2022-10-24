@@ -16,15 +16,22 @@
 <div class="wrapper">
     <div class="add-todo-wrapper">
         <div class="input-wrapper">
-            <input type="text" id="task-description">
+            <label>
+                <input type="text" id="task-description">
+            </label>
         </div>
         <div class="button-wrapper">
             <button id="add-task-btn">Add task</button>
         </div>
     </div>
-    <h2>Tasks</h2>
+    <h2><span id="counter-output"></span> <span id="counter-text">Tasks remaining</span></h2>
     <div class="todos-wrapper">
     </div>
+    <footer class="filter-bar">
+        <div class="filter-item">All</div>
+        <div class="filter-item">Active</div>
+        <div class="filter-item">Done</div>
+    </footer>
 </div>
 <script src="scripts/script.js"></script>
 </body>
