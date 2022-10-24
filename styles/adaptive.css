@@ -1,0 +1,73 @@
+/* max-width */
+@media only screen and (max-width: 1700px) {
+    main {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    main {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        padding: 0;
+    }
+
+    .wrapper {
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .add-todo-wrapper {
+        border-radius: 0;
+    }
+
+    .todos-wrapper {
+        height: 80vh;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .input-wrapper {
+        width: 100%;
+    }
+
+    .button-wrapper {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 290px) {
+    .todos-wrapper {
+        height: 75vh;
+    }
+
+    .filter-bar {
+        padding: 10px 80px;
+    }
+}
+
+
+
+/* max-height */
+@media only screen and (max-height: 800px) {
+    .todos-wrapper {
+        height: 70vh;
+    }
+}
+
+@media only screen and (max-height: 640px) {
+    .todos-wrapper {
+        height: 65vh;
+    }
+}
+
+@media only screen and (max-height: 550px) {
+    .todos-wrapper {
+        height: 60vh;
+    }
+}

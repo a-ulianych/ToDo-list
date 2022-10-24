@@ -10,29 +10,35 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
     <script src="https://kit.fontawesome.com/d639513a24.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="wrapper">
-    <div class="add-todo-wrapper">
-        <div class="input-wrapper">
-            <label>
-                <input type="text" id="task-description">
-            </label>
+<main>
+    <div class="wrapper">
+        <div class="add-todo-wrapper">
+            <div class="input-wrapper">
+                <label>
+                    <input type="text" id="task-description">
+                </label>
+            </div>
+            <div class="button-wrapper">
+                <button id="add-task-btn">Add task</button>
+            </div>
         </div>
-        <div class="button-wrapper">
-            <button id="add-task-btn">Add task</button>
+        <h2><span id="counter-output"></span> <span id="counter-text">Tasks remaining</span></h2>
+        <div class="todos-wrapper">
         </div>
+        <footer class="filter-bar">
+            <div class="filter-wrapper">
+                <span class="filter-item">All</span>
+                <span class="filter-item">Active</span>
+                <span class="filter-item">Done</span>
+            </div>
+        </footer>
     </div>
-    <h2><span id="counter-output"></span> <span id="counter-text">Tasks remaining</span></h2>
-    <div class="todos-wrapper">
-    </div>
-    <footer class="filter-bar">
-        <div class="filter-item">All</div>
-        <div class="filter-item">Active</div>
-        <div class="filter-item">Done</div>
-    </footer>
-</div>
-<script src="scripts/script.js"></script>
+</main>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
